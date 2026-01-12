@@ -60,6 +60,8 @@
             padding: 15px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%;
+            max-width: 540px;
         }
         
         .post-wrapper:hover {
@@ -74,8 +76,10 @@
             font-size: 1.1em;
         }
         
-        iframe {
+        .post-wrapper iframe {
             border-radius: 4px;
+            width: 100%;
+            max-width: 504px;
         }
         
         @media (max-width: 768px) {
@@ -90,6 +94,10 @@
             .section-title {
                 font-size: 1.4em;
             }
+            
+            .post-wrapper iframe {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -97,9 +105,11 @@
     <div class="container">
         <h1>📊 LinkedIn Posts Collection</h1>
         
+        <!-- Section 1: Trends/Patterns Found -->
         <div class="section">
             <h2 class="section-title">Trends/Patterns Found</h2>
             <div class="posts-grid">
+                
                 <div class="post-wrapper">
                     <div class="post-label">Post 1</div>
                     <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7391161072528912384" height="1542" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
@@ -149,12 +159,15 @@
                     <div class="post-label">Post 10</div>
                     <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7313123316951592960" height="2200" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
                 </div>
+                
             </div>
         </div>
         
+        <!-- Section 2: Conversations / Themes / Comments Discussed -->
         <div class="section">
             <h2 class="section-title">Conversations / Themes / Comments Discussed</h2>
             <div class="posts-grid">
+                
                 <div class="post-wrapper">
                     <div class="post-label">Post 1</div>
                     <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7401131550383337472" height="1444" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
@@ -204,8 +217,10 @@
                     <div class="post-label">Post 10</div>
                     <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7313123316951592960" height="2200" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
                 </div>
+                
             </div>
         </div>
+        
     </div>
 </body>
 </html>
